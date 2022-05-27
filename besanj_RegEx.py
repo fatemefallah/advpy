@@ -1,4 +1,3 @@
-
 import re
 
 
@@ -24,3 +23,4 @@ def validate_email(email):
 def validate_phone(number):
     return bool(re.match(r"^(0|\+98|0098)9[0-9]{9}$", number))
 """
+
