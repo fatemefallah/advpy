@@ -11,7 +11,7 @@ def most_freq(List):
     for item in List:
         dic[item] = dic.get(item, 0) + 1
         if dic[item] >= count:
-            count = dic[item]
+            count, itm = dic[item], item
 
     if all(value == 1 for value in dic.values()):
         return 1
@@ -31,5 +31,3 @@ for i in range(n):
     else:
         dic[f] = l
 print(col)"""
-
-
