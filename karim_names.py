@@ -6,6 +6,7 @@ for i in range(n):
     for ch in s:
         if ch not in t:
             t += ch 
-    if ans < len(t): # ans = max(ans, len(t))
+    if ans < len(t):
+        # ans = max(ans, len(t))
         ans = len(t)
 print(ans)

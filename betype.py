@@ -6,5 +6,6 @@ for i in inp:
         res.append(i)
     elif i == '=':
         res.pop()
-
+#salam
+   #salam
 print(''.join(res))
