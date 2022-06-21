@@ -1,19 +1,16 @@
 def calculator(n, m, ls):
     res = list()
-    fin = list()
-    # slicing items to m-no list
+    answer = 0
     i = 0
     while i < n:
         res.append(sum(ls[i: i + m]))
         i += m
-
-    for j in range(len(res) - 1):
-        i = j + 1
+    for j in range(len(res)):
         if j % 2 == 0:
-            res[i] = res[j] - res[i]
+            answer += res[j]
         else:
-            res[i] = res[i] + res[j]
-    return res[-1]
+            answer -= res[j]
+    return answer
 
 
 # Local Tests
