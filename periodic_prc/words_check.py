@@ -1,9 +1,9 @@
 def words_check(text):
     res = {}
-    text = text.split('\n')
+    text = text.split()
     for item in text:
         item = item.split(' ')
-        for i, word in enumerate(item):
+        for word in item:
             length = len(word) / 2
             cnt = 0
             for ch in word:
