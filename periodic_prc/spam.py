@@ -7,6 +7,7 @@ def is_valid(c):
 
 def invalidation_content(cont):
     length = len(cont)
+    spam = False
     cnt = 0
     for char in cont:
         if is_valid(char) is False:
