@@ -1,5 +1,5 @@
 from ground_vehicle import GroundVehicle
-from flyig_vehicle import FlyingVehicle
+from flying_vehicle import FlyingVehicle
 
 
 class Airplane(FlyingVehicle, GroundVehicle):

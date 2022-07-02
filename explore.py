@@ -7,6 +7,7 @@ def explore(ttype, address):
     dic = {}
     cnt = 0
     tmp = list(os.walk(address))
+    print(tmp)
     adds = [x[0] for x in tmp]
     files = [x[2] for x in tmp]
     for i in range(len(files)):
