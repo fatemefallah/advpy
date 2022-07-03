@@ -14,8 +14,10 @@ def transform_exceptions(func_ls):
             exobj = ExceptionProxy(str(e), func_ls[i])
         else:
             exobj = ExceptionProxy("ok!", func_ls[i])
-        res.append("msg: " + exobj.msg + "\nfunction name: " + exobj.function.__name__)
-    return '\n'.join(res)
+        #res.append("msg: " + exobj.msg + "\nfunction name: " + exobj.function.__name__)
+        res.append(exobj)
+    #return '\n'.join(res)
+    return res
 
 
 
