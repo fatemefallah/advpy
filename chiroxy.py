@@ -4,7 +4,6 @@ class ExceptionProxy(Exception):
         self.function = function
 
 
-
 def transform_exceptions(func_ls):
     res = list()
     for i in range(len(func_ls)):
@@ -18,7 +17,6 @@ def transform_exceptions(func_ls):
         res.append(exobj)
     #return '\n'.join(res)
     return res
-
 
 
 def f():
