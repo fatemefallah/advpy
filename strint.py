@@ -24,8 +24,10 @@ class Strint(int):
         return int(str(self) + str(other))
 
     def __sub__(self, other):
-        sub_res = int(re.sub(str(other),"", str(self)))
-        if sub_res < 0:
+        sub_res = re.sub(str(other),"", str(self))
+        if len(sub_res) == 0:
+            return 0
+        if int(sub_res) < 0:
             raise 'The subtraction is not valid'
         else:
             return sub_res
@@ -38,7 +40,7 @@ class Strint(int):
 
 
 a = Strint(8439)
-b = Strint(39)
-d = b - a
+b = Strint(843)
+d = a - b
 print(d)
 print(type(d))
